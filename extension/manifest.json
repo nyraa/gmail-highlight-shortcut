@@ -1,0 +1,17 @@
+{
+    "manifest_version": 2,
+    "name": "Gmail highlight helper",
+    "version": "0.1",
+    "content_scripts": [
+        {
+            "js": [
+                "js/inboxsdk.js",
+                "src/content.js"
+            ],
+            "matches": [
+                "https://mail.google.com/*",
+                "https://inbox.google.com/*"
+            ]
+        }
+    ]
+}
